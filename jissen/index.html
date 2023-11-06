@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML&CSS 実践</title>
+  <link rel="stylesheet" href="css/reset.css"> <!-- 優先度低い -->
+  <link rel="stylesheet" href="css/style.css"> <!-- 優先度高い -->
+</head>
+
+<body>
+  <header class="header" id="header">
+    <div class="header-wrap">
+      <div class="header-wrap__img">
+        <a href="#">
+          <img src="img/logo.png" alt="ロゴ画像">
+        </a>
+      </div>
+      <nav class="header-wrap__nav">
+        <ul class="header-wrap__nav__list">
+          <li class="header-wrap__nav__list__item">
+            <a href="#news">新着情報</a>
+          </li>
+          <li class="header-wrap__nav__list__item">
+            <a href="#about">私たちについて</a>
+          </li>
+          <li class="header-wrap__nav__list__item">
+            <a href="#service">事業内容</a>
+          </li>
+          <li class="header-wrap__nav__list__item">
+            <a href="#works">制作事例</a>
+          </li>
+          <li class="header-wrap__nav__list__item __contact">
+            <a href="#contact">お問い合わせ</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <section class="top" id="top">
+      <div class="top-wrap __bg">
+        <h1 class="f-ttl">
+          全ての人のキャリアに<br>
+          スキルで稼ぐという選択肢を
+        </h1>
+      </div>
+    </section>
+    <section class="news" id="news">
+      <div class="news-wrap __inner">
+        <div class="news-wrap__ttl">
+          <h2 class="s-ttl__1">
+            <span>新着情報</span>
+            News
+          </h2>
+        </div>
+        <div class="news-wrap__con">
+          <ul class="news-wrap__con__list">
+            <li class="news-wrap__con__list__item">
+              <p class="news-wrap__con__list__item__date">2023.11.06</p>
+              <p class="news-wrap__con__list__item__cate">TOPICS</p>
+              <p class="news-wrap__con__list__item__head">WithCode無料体験コース開講中！</p>
+            </li>
+            <li class="news-wrap__con__list__item">
+              <p class="news-wrap__con__list__item__date">2023.11.06</p>
+              <p class="news-wrap__con__list__item__cate">TOPICS</p>
+              <p class="news-wrap__con__list__item__head">WithCode受講者の声を追加しました</p>
+            </li>
+            <li class="news-wrap__con__list__item">
+              <p class="news-wrap__con__list__item__date">2023.11.06</p>
+              <p class="news-wrap__con__list__item__cate">TOPICS</p>
+              <p class="news-wrap__con__list__item__head">ブログを更新しました</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section class="about" id="about">
+      <div class="about-wrap __inner">
+        <div class="about-wrap__img">
+          <img src="img/woman-img.jpg" alt="WithCode紹介画像">
+        </div>
+        <div class="about-wrap__con">
+          <h2 class="s-ttl__2">
+            About Us
+            <span>WithCodeについて</span>
+          </h2>
+          <p class="about-wrap__con__head">
+            Web制作会社が開発した<br>
+            実践的なカリキュラムで優秀な人材を輩出
+          </p>
+          <p class="about-wrap__con__txt">
+            卒業後からWeb制作会社の案件を担当しながら稼ぐ環境を提供する
+            業界初のプログラミングスクールです。
+            <br><br>
+            超アウトプット型のカリキュラムを通じて、案件を担当できるレベ
+            ルまで成長していただきます。
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="service" id="service">
+      <div class="service-wrap __inner">
+        <div class="service-wrap__ttl">
+          <h2 class="s-ttl__3">
+            <span>事業内容</span>
+            Service
+          </h2>
+        </div>
+        <div class="service-wrap__con">
+          <div class="service-wrap__con__block">
+            <div class="service-wrap__con__block__top __block__img1">
+              <span class="service-wrap__con__block__head">習得コース</span>
+            </div>
+            <p class="service-wrap__con__block__txt">
+              「プログラミングの基礎を学ぶ」というコンセプトを掲げています。一人でもホームページを作成してみたいという方向けのコースです。
+            </p>
+          </div>
+          <div class="service-wrap__con__block">
+            <div class="service-wrap__con__block__top __block__img2"> <!-- img1→img2に変更 -->
+              <span class="service-wrap__con__block__head">完全習得コース</span>
+            </div>
+            <p class="service-wrap__con__block__txt">
+              「Web制作で必要なスキルを学ぶ」というコンセプトを掲げています。実際に案件を担当して稼いでいきたいという方向けのコースです。
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="works" id="works">
+      <div class="works-wrap __inner">
+        <div class="service-wrap__ttl">
+          <h2 class="s-ttl__3">
+            <span>制作事例</span>
+            Works
+          </h2>
+        </div>
+        <div class="works-wrap__con">
+          <div class="works-wrap__con__block">
+            <span class="works-wrap__con__block__head">WithCode</span>
+          </div>
+          <div class="works-wrap__con__block">
+            <span class="works-wrap__con__block__head">WithCode</span>
+          </div>
+          <div class="works-wrap__con__block">
+            <span class="works-wrap__con__block__head">WithCode</span>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="contact" id="contact">
+      <div class="contact-wrap __inner">
+        <div class="contact-wrap__ttl">
+          <h2 class="s-ttl__3">
+            <span>お問い合わせ</span>
+            Contact
+          </h2>
+        </div>
+        <div class="contact-wrap__con">
+          <form class="contact-wrap__con__form" method="post">
+            <div class="contact-wrap__con__form__item">
+              <label for="name">氏名</label>
+              <input type="text" id="name" name="user_name">
+            </div>
+            <div class="contact-wrap__con__form__item">
+              <label for="mail">メールアドレス</label> <!-- 変更 -->
+              <input type="email" id="mail" name="user_mail"> <!-- 変更 -->
+            </div>
+            <div class="contact-wrap__con__form__item">
+              <label for="tel">電話番号</label> <!-- 変更 -->
+              <input type="tel" id="tel" name="user_tel"> <!-- 変更 -->
+            </div>
+            <div class="contact-wrap__con__form__item">
+              <label for="msg">お問い合わせ内容</label>
+              <textarea id="msg" name="user_message"></textarea>
+            </div>
+            <div class="contact-wrap__con__form__btn">
+              <button type="submit">送信する</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer" id="footer">
+    <div class="footer-wrap">
+      <small class="footer-wrap__right">© 2023 WithCode All rights reserved.</small>
+    </div>
+  </footer>
+</body>
+
+</html>
